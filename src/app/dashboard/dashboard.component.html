@@ -1,0 +1,23 @@
+<!-- <div class="row">-->
+  <div class="row">
+<ng-container *ngFor="let user of user$ | async">
+  <div class="col-md-12 col-xl-4 mb-3">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{user?.username}}</mat-card-title>
+        <mat-card-subtitle>{{user?.name}}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-actions>
+        <button mat-stroked-button color="accent">DETAILS</button>
+        <button mat-stroked-button color="accent">EDIT</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</ng-container>
+</div>
+  <!-- counter-card-1 end-->
+
+
+  
